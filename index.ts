@@ -17,7 +17,7 @@ server.post('/api/webhooks/:webhook/:token', async (request, reply) => {
     reply.send(res.data + res.status)
 })
 
-server.listen({ port: 3000 }, function (err, address) {
+server.listen({ port: 3000, host: "0.0.0.0" }, function (err, address) {
     console.log("Ready!")
     if (err) {
       server.log.error(err)
