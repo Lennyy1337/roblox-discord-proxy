@@ -1,0 +1,20 @@
+{
+  "name": "roblox-discord-proxy",
+  "version": "1.0.0",
+  "description": "Allows roblox to send data to discord webhooks",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsc -p tsconfig.json && node index.js"
+  },
+  "author": "Lenny/FRZN",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "fastify": "^4.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}
